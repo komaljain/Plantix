@@ -27,5 +27,4 @@ class ApplicationModule {
     @Provides
     @Singleton
     fun provideRemoteData(remoteData: RemoteDataImpl): RemoteData = remoteData
-
 }

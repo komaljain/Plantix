@@ -14,7 +14,6 @@ class NamesListViewHolder(override val containerView: View) :
     RecyclerView.ViewHolder(containerView), LayoutContainer {
 
     fun bind(name: Names?) {
-        Timber.d("name:" + name)
         if (name != null) {
             with(name) {
                 containerView.actvNames.text = name.title.capitalize()

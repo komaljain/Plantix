@@ -7,8 +7,8 @@ import com.assignment.plantix.domain.entity.Names
 import javax.inject.Inject
 
 class RemoteDataImpl @Inject constructor() : RemoteData {
-    override fun fetchNames() : LiveData<List<Names>> {
-        val namesStringList : MutableList<Names> = arrayListOf()
+    override fun fetchNames(): LiveData<List<Names>> {
+        val namesStringList: MutableList<Names> = arrayListOf()
         namesStringList.add(Names("komalR"))
         namesStringList.add(Names("ghisulalR"))
         namesStringList.add(Names("gunwantiR"))
@@ -17,8 +17,7 @@ class RemoteDataImpl @Inject constructor() : RemoteData {
         namesStringList.add(Names("miteshR"))
         namesStringList.add(Names("krattikaR"))
 
-        val namesList : MutableLiveData<List<Names>> = MutableLiveData(namesStringList)
-        return namesList;
+        val namesList: MutableLiveData<List<Names>> = MutableLiveData(namesStringList)
+        return namesList
     }
-
 }

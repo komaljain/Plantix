@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.assignment.plantix.domain.entity.Names
-import timber.log.Timber
 
 class NamesListAdapter : ListAdapter<Names, RecyclerView.ViewHolder>(REPO_COMPARATOR) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -28,5 +27,4 @@ class NamesListAdapter : ListAdapter<Names, RecyclerView.ViewHolder>(REPO_COMPAR
                 oldItem == newItem
         }
     }
-
 }

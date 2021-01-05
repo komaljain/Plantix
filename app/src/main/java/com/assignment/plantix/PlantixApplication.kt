@@ -14,10 +14,9 @@ class PlantixApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        instance = this;
-        if(BuildConfig.DEBUG) {
+        instance = this
+        if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
     }
-
 }
